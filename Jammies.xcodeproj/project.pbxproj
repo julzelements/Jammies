@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC4D10FD1F674BA600C5ECDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4D10FC1F674BA600C5ECDB /* AppDelegate.swift */; };
+		EC4D10FF1F674BA600C5ECDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4D10FE1F674BA600C5ECDB /* ViewController.swift */; };
+		EC4D11021F674BA600C5ECDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4D11001F674BA600C5ECDB /* Main.storyboard */; };
+		EC4D11041F674BA600C5ECDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC4D11031F674BA600C5ECDB /* Assets.xcassets */; };
+		EC4D11071F674BA600C5ECDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4D11051F674BA600C5ECDB /* LaunchScreen.storyboard */; };
+		EC4D11121F674BA600C5ECDB /* JammiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4D11111F674BA600C5ECDB /* JammiesTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC4D110E1F674BA600C5ECDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC4D10F11F674BA600C5ECDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC4D10F81F674BA600C5ECDB;
+			remoteInfo = Jammies;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EC4D10F91F674BA600C5ECDB /* Jammies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jammies.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC4D10FC1F674BA600C5ECDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EC4D10FE1F674BA600C5ECDB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EC4D11011F674BA600C5ECDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC4D11031F674BA600C5ECDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC4D11061F674BA600C5ECDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EC4D11081F674BA600C5ECDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC4D110D1F674BA600C5ECDB /* JammiesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JammiesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC4D11111F674BA600C5ECDB /* JammiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JammiesTests.swift; sourceTree = "<group>"; };
+		EC4D11131F674BA600C5ECDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC4D10F61F674BA600C5ECDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC4D110A1F674BA600C5ECDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC4D10F01F674BA600C5ECDB = {
+			isa = PBXGroup;
+			children = (
+				EC4D10FB1F674BA600C5ECDB /* Jammies */,
+				EC4D11101F674BA600C5ECDB /* JammiesTests */,
+				EC4D10FA1F674BA600C5ECDB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC4D10FA1F674BA600C5ECDB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC4D10F91F674BA600C5ECDB /* Jammies.app */,
+				EC4D110D1F674BA600C5ECDB /* JammiesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC4D10FB1F674BA600C5ECDB /* Jammies */ = {
+			isa = PBXGroup;
+			children = (
+				EC4D10FC1F674BA600C5ECDB /* AppDelegate.swift */,
+				EC4D10FE1F674BA600C5ECDB /* ViewController.swift */,
+				EC4D11001F674BA600C5ECDB /* Main.storyboard */,
+				EC4D11031F674BA600C5ECDB /* Assets.xcassets */,
+				EC4D11051F674BA600C5ECDB /* LaunchScreen.storyboard */,
+				EC4D11081F674BA600C5ECDB /* Info.plist */,
+			);
+			path = Jammies;
+			sourceTree = "<group>";
+		};
+		EC4D11101F674BA600C5ECDB /* JammiesTests */ = {
+			isa = PBXGroup;
+			children = (
+				EC4D11111F674BA600C5ECDB /* JammiesTests.swift */,
+				EC4D11131F674BA600C5ECDB /* Info.plist */,
+			);
+			path = JammiesTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC4D10F81F674BA600C5ECDB /* Jammies */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC4D11161F674BA600C5ECDB /* Build configuration list for PBXNativeTarget "Jammies" */;
+			buildPhases = (
+				EC4D10F51F674BA600C5ECDB /* Sources */,
+				EC4D10F61F674BA600C5ECDB /* Frameworks */,
+				EC4D10F71F674BA600C5ECDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Jammies;
+			productName = Jammies;
+			productReference = EC4D10F91F674BA600C5ECDB /* Jammies.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC4D110C1F674BA600C5ECDB /* JammiesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC4D11191F674BA600C5ECDB /* Build configuration list for PBXNativeTarget "JammiesTests" */;
+			buildPhases = (
+				EC4D11091F674BA600C5ECDB /* Sources */,
+				EC4D110A1F674BA600C5ECDB /* Frameworks */,
+				EC4D110B1F674BA600C5ECDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC4D110F1F674BA600C5ECDB /* PBXTargetDependency */,
+			);
+			name = JammiesTests;
+			productName = JammiesTests;
+			productReference = EC4D110D1F674BA600C5ECDB /* JammiesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC4D10F11F674BA600C5ECDB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Julian Scharf";
+				TargetAttributes = {
+					EC4D10F81F674BA600C5ECDB = {
+						CreatedOnToolsVersion = 9.0;
+					};
+					EC4D110C1F674BA600C5ECDB = {
+						CreatedOnToolsVersion = 9.0;
+						TestTargetID = EC4D10F81F674BA600C5ECDB;
+					};
+				};
+			};
+			buildConfigurationList = EC4D10F41F674BA600C5ECDB /* Build configuration list for PBXProject "Jammies" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC4D10F01F674BA600C5ECDB;
+			productRefGroup = EC4D10FA1F674BA600C5ECDB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC4D10F81F674BA600C5ECDB /* Jammies */,
+				EC4D110C1F674BA600C5ECDB /* JammiesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC4D10F71F674BA600C5ECDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC4D11071F674BA600C5ECDB /* LaunchScreen.storyboard in Resources */,
+				EC4D11041F674BA600C5ECDB /* Assets.xcassets in Resources */,
+				EC4D11021F674BA600C5ECDB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC4D110B1F674BA600C5ECDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC4D10F51F674BA600C5ECDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC4D10FF1F674BA600C5ECDB /* ViewController.swift in Sources */,
+				EC4D10FD1F674BA600C5ECDB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC4D11091F674BA600C5ECDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC4D11121F674BA600C5ECDB /* JammiesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC4D110F1F674BA600C5ECDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC4D10F81F674BA600C5ECDB /* Jammies */;
+			targetProxy = EC4D110E1F674BA600C5ECDB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EC4D11001F674BA600C5ECDB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC4D11011F674BA600C5ECDB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EC4D11051F674BA600C5ECDB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC4D11061F674BA600C5ECDB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC4D11141F674BA600C5ECDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EC4D11151F674BA600C5ECDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC4D11171F674BA600C5ECDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RR2B862M79;
+				INFOPLIST_FILE = Jammies/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.julzelements.Jammies;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC4D11181F674BA600C5ECDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RR2B862M79;
+				INFOPLIST_FILE = Jammies/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.julzelements.Jammies;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EC4D111A1F674BA600C5ECDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = RR2B862M79;
+				INFOPLIST_FILE = JammiesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.julzelements.JammiesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jammies.app/Jammies";
+			};
+			name = Debug;
+		};
+		EC4D111B1F674BA600C5ECDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = RR2B862M79;
+				INFOPLIST_FILE = JammiesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.julzelements.JammiesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jammies.app/Jammies";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC4D10F41F674BA600C5ECDB /* Build configuration list for PBXProject "Jammies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC4D11141F674BA600C5ECDB /* Debug */,
+				EC4D11151F674BA600C5ECDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC4D11161F674BA600C5ECDB /* Build configuration list for PBXNativeTarget "Jammies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC4D11171F674BA600C5ECDB /* Debug */,
+				EC4D11181F674BA600C5ECDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC4D11191F674BA600C5ECDB /* Build configuration list for PBXNativeTarget "JammiesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC4D111A1F674BA600C5ECDB /* Debug */,
+				EC4D111B1F674BA600C5ECDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC4D10F11F674BA600C5ECDB /* Project object */;
+}
