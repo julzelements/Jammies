@@ -1,10 +1,4 @@
-//
-//  AppDelegate.swift
-//  Jammies
-//
-//  Created by Julian Scharf on 12/9/17.
-//  Copyright © 2017 Julian Scharf. All rights reserved.
-//
+//AppDelegate.swift
 
 import UIKit
 

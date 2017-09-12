@@ -1,10 +1,4 @@
-//
-//  RecordedAudio.swift
-//  Pitch Perfect
-//
-//  Created by Julian Scharf on 17/02/2016.
-//  Copyright © 2016 Julian Scharf. All rights reserved.
-//
+//RecordedAudio.swift
 
 import Foundation
 
