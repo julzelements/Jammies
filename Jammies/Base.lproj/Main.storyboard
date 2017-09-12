@@ -5,6 +5,8 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13156.2"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Baseline standard spacing" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -30,23 +32,30 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gnr-mg-K5v">
+                            <progressView hidden="YES" opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gnr-mg-K5v">
                                 <rect key="frame" x="16" y="395" width="343" height="2"/>
                             </progressView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="xQh-JE-qKg">
+                                <rect key="frame" x="177" y="395" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="wbl-Vn-fId" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="DIH-hB-Kcj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gnr-mg-K5v" secondAttribute="trailing" constant="16" id="PeO-D0-Igo"/>
                             <constraint firstItem="61J-ZX-BS7" firstAttribute="top" secondItem="wbl-Vn-fId" secondAttribute="bottom" constant="7.5" id="QAJ-ue-pbn"/>
+                            <constraint firstItem="xQh-JE-qKg" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="UBM-Ko-YX1"/>
                             <constraint firstItem="wbl-Vn-fId" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="YLE-rD-TcR"/>
                             <constraint firstItem="gnr-mg-K5v" firstAttribute="top" secondItem="61J-ZX-BS7" secondAttribute="bottom" constant="8" id="bzj-D6-gRe"/>
                             <constraint firstItem="gnr-mg-K5v" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="fyy-KV-Xoh"/>
+                            <constraint firstItem="xQh-JE-qKg" firstAttribute="firstBaseline" secondItem="61J-ZX-BS7" secondAttribute="baseline" constant="12.5" symbolType="layoutAnchor" id="hb9-Ff-d1d"/>
                             <constraint firstItem="61J-ZX-BS7" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="pDx-nc-HXE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="xQh-JE-qKg" id="XbU-Qc-YHu"/>
+                        <outlet property="listenButton" destination="wbl-Vn-fId" id="LDw-CJ-Gv5"/>
                         <outlet property="progressBar" destination="gnr-mg-K5v" id="qVv-nz-sLh"/>
                         <outlet property="userFeedbackLabel" destination="61J-ZX-BS7" id="Qpo-B9-zuc"/>
                     </connections>

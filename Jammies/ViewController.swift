@@ -18,6 +18,10 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var userFeedbackLabel: UILabel!
     
+    @IBOutlet weak var listenButton: UIButton!
+    
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
     enum DisplayState {
         case notRecording
         case recording
@@ -28,15 +32,22 @@ class ViewController: UIViewController {
     func updateDisplay(displayState: DisplayState) {
         switch displayState {
         case .notRecording:
+            activityIndicatorStopped()
+            progressBar.isHidden = true
             userFeedbackLabel.isHidden = true
         case .recording:
+            listenButton.isHidden = true
+            progressBar.isHidden = false
             userFeedbackLabel.isHidden = false
             userFeedbackLabel.text = "Recording \(Int(microphoneRecordingTime)) secs of audio..."
         case .networkRequest:
+            progressBar.isHidden = true
             UIApplication.shared.isNetworkActivityIndicatorVisible = true
+            activityIndicatorStarted()
             userFeedbackLabel.text = "Analysing audio..."
         case .networkFinished:
             UIApplication.shared.isNetworkActivityIndicatorVisible = false
+            activityIndicatorStopped()
             userFeedbackLabel.text = "Analysis complete"
         }
     }
@@ -58,12 +69,23 @@ class ViewController: UIViewController {
             timer.invalidate()
             updateDisplay(displayState: .networkRequest)
         } else {
-            progressBar.progress = progressBar.progress + getProgressBarIncrement()
+            let newProgress = progressBar.progress + getProgressBarIncrement()
+            progressBar.setProgress(newProgress, animated: true)
         }
     }
     
     func getProgressBarIncrement() -> Float {
         return Float(1 / (microphoneRecordingTime * (1 / timeInterval)))
+    }
+    
+    func activityIndicatorStarted() {
+        activityIndicator.startAnimating()
+        activityIndicator.isHidden = false
+    }
+    
+    func activityIndicatorStopped() {
+        activityIndicator.stopAnimating()
+        activityIndicator.isHidden = true
     }
     
 
