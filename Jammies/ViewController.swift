@@ -7,35 +7,36 @@
 //
 
 import UIKit
+import AVFoundation
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, AVAudioRecorderDelegate {
 
     var timer = Timer()
     var timeInterval = 0.01
     var microphoneRecordingTime = 5.0
     
+    var audioRecorder: AVAudioRecorder!
+    var recordedAudio: RecordedAudio!
+    
     @IBOutlet weak var progressBar: UIProgressView!
-    
     @IBOutlet weak var userFeedbackLabel: UILabel!
-    
     @IBOutlet weak var listenButton: UIButton!
-    
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     enum DisplayState {
-        case notRecording
-        case recording
+        case notListening
+        case listening
         case networkRequest
         case networkFinished
     }
     
     func updateDisplay(displayState: DisplayState) {
         switch displayState {
-        case .notRecording:
+        case .notListening:
             activityIndicatorStopped()
             progressBar.isHidden = true
             userFeedbackLabel.isHidden = true
-        case .recording:
+        case .listening:
             listenButton.isHidden = true
             progressBar.isHidden = false
             userFeedbackLabel.isHidden = false
@@ -54,14 +55,18 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        updateDisplay(displayState: .notRecording)
+        updateDisplay(displayState: .notListening)
     }
-
-    @IBAction func didStartListening(_ sender: Any) {
+    
+    func startProgressBar() {
         progressBar.progress = 0
         timer = Timer.init(timeInterval: timeInterval, target: self, selector: #selector(updateProgressBar), userInfo: nil, repeats: true)
         RunLoop.current.add(timer, forMode: .defaultRunLoopMode)
-        updateDisplay(displayState: .recording)
+    }
+
+    @IBAction func didStartListening(_ sender: Any) {
+        startProgressBar()
+        updateDisplay(displayState: .listening)
     }
     
     @objc func updateProgressBar() {
@@ -72,6 +77,35 @@ class ViewController: UIViewController {
             let newProgress = progressBar.progress + getProgressBarIncrement()
             progressBar.setProgress(newProgress, animated: true)
         }
+    }
+    
+    func recordAudio() {
+        let dirPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String
+        let recordingName = "my_audio.wav"
+        let pathArray = [dirPath, recordingName]
+        let filePath = NSURL.fileURL(withPathComponents: pathArray)
+        let session = AVAudioSession.sharedInstance()
+        try! session.setCategory(AVAudioSessionCategoryPlayAndRecord)
+        try! audioRecorder = AVAudioRecorder(url: filePath!, settings: [:])
+        
+        audioRecorder.delegate = self
+        audioRecorder.isMeteringEnabled = true
+        audioRecorder.prepareToRecord()
+        audioRecorder.record()
+    }
+    
+    func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {
+        if(flag) {
+            recordedAudio = RecordedAudio(audioFilePathURL: recorder.url as NSURL, audioTitle: recorder.url.lastPathComponent)
+        } else {
+            print("recording was not successful")
+        }
+    }
+    
+    func stopRecording() {
+        audioRecorder.stop()
+        let audioSession = AVAudioSession.sharedInstance()
+        try! audioSession.setActive(false)
     }
     
     func getProgressBarIncrement() -> Float {

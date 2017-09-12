@@ -13,6 +13,7 @@
 		EC4D11041F674BA600C5ECDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC4D11031F674BA600C5ECDB /* Assets.xcassets */; };
 		EC4D11071F674BA600C5ECDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4D11051F674BA600C5ECDB /* LaunchScreen.storyboard */; };
 		EC4D11121F674BA600C5ECDB /* JammiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4D11111F674BA600C5ECDB /* JammiesTests.swift */; };
+		EC5765C61F678D84009A5A2B /* RecordedAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5765C51F678D84009A5A2B /* RecordedAudio.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		EC4D110D1F674BA600C5ECDB /* JammiesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JammiesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC4D11111F674BA600C5ECDB /* JammiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JammiesTests.swift; sourceTree = "<group>"; };
 		EC4D11131F674BA600C5ECDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC5765C51F678D84009A5A2B /* RecordedAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordedAudio.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		EC4D10FB1F674BA600C5ECDB /* Jammies */ = {
 			isa = PBXGroup;
 			children = (
+				EC5765C51F678D84009A5A2B /* RecordedAudio.swift */,
 				EC4D10FC1F674BA600C5ECDB /* AppDelegate.swift */,
 				EC4D10FE1F674BA600C5ECDB /* ViewController.swift */,
 				EC4D11001F674BA600C5ECDB /* Main.storyboard */,
@@ -197,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC5765C61F678D84009A5A2B /* RecordedAudio.swift in Sources */,
 				EC4D10FF1F674BA600C5ECDB /* ViewController.swift in Sources */,
 				EC4D10FD1F674BA600C5ECDB /* AppDelegate.swift in Sources */,
 			);
