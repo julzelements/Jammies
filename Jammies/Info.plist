@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>APIEndPoint</key>
+	<string>http://146.148.93.62:5000/recognize</string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>Required to listen to audio</string>
 	<key>CFBundleDevelopmentRegion</key>

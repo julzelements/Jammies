@@ -12,7 +12,6 @@
 		EC4D11021F674BA600C5ECDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4D11001F674BA600C5ECDB /* Main.storyboard */; };
 		EC4D11041F674BA600C5ECDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC4D11031F674BA600C5ECDB /* Assets.xcassets */; };
 		EC4D11071F674BA600C5ECDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4D11051F674BA600C5ECDB /* LaunchScreen.storyboard */; };
-		EC4D11121F674BA600C5ECDB /* JammiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4D11111F674BA600C5ECDB /* JammiesTests.swift */; };
 		EC5765C61F678D84009A5A2B /* RecordedAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5765C51F678D84009A5A2B /* RecordedAudio.swift */; };
 		EC5765C81F679518009A5A2B /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5765C71F679518009A5A2B /* AudioRecorder.swift */; };
 		EC5765CB1F679B57009A5A2B /* Recognize.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5765CA1F679B57009A5A2B /* Recognize.swift */; };
@@ -40,7 +39,6 @@
 		EC4D11061F674BA600C5ECDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC4D11081F674BA600C5ECDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC4D110D1F674BA600C5ECDB /* JammiesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JammiesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC4D11111F674BA600C5ECDB /* JammiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JammiesTests.swift; sourceTree = "<group>"; };
 		EC4D11131F674BA600C5ECDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC5765C51F678D84009A5A2B /* RecordedAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordedAudio.swift; sourceTree = "<group>"; };
 		EC5765C71F679518009A5A2B /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
@@ -105,7 +103,6 @@
 		EC4D11101F674BA600C5ECDB /* JammiesTests */ = {
 			isa = PBXGroup;
 			children = (
-				EC4D11111F674BA600C5ECDB /* JammiesTests.swift */,
 				EC4D11131F674BA600C5ECDB /* Info.plist */,
 				EC5765CF1F679DE8009A5A2B /* APITest.swift */,
 			);
@@ -244,7 +241,6 @@
 			files = (
 				EC5765D11F679F20009A5A2B /* Recognize.swift in Sources */,
 				EC5765D01F679DE8009A5A2B /* APITest.swift in Sources */,
-				EC4D11121F674BA600C5ECDB /* JammiesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

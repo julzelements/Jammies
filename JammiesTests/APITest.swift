@@ -1,10 +1,4 @@
-//
 //  APITest.swift
-//  JammiesTests
-//
-//  Created by Julian Scharf on 12/9/17.
-//  Copyright © 2017 Julian Scharf. All rights reserved.
-//
 
 import XCTest
 
@@ -18,7 +12,7 @@ class APITest: XCTestCase {
     func testDownloadWebData() {
         let fileUrl = Bundle.main.url(forResource: "IronMan_420-425secs", withExtension: "wav")
         let recognize = Recognize(audioFilePath: fileUrl!)
-        let request = recognize.recognize()
+        let request = recognize.createMultiformPOSTRequest()
         
 
         let expectation = XCTestExpectation(description: "Hit the backend with a recognize request")
@@ -33,7 +27,7 @@ class APITest: XCTestCase {
             
         }
         dataTask.resume()
-        wait(for: [expectation], timeout: 10.0)
+        wait(for: [expectation], timeout: 20.0)
     }
 
     

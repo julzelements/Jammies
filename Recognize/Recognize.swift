@@ -3,26 +3,39 @@ import UIKit
 class Recognize: NSObject {
     
     var audioURL: URL
-    var url: URL
+    var apiEndPoint: String
+    var url: URL!
 
     init(audioFilePath: URL) {
         self.audioURL = audioFilePath
-        self.url = URL(string: "http://146.148.93.62:5000/recognize")!  //TODO: replace this with Plist reference
+        self.apiEndPoint = Recognize.getApiEndPoint()
     }
     
-    func recognize() -> URLRequest {
-        let recordingName = audioURL.lastPathComponent
+    private static func getApiEndPoint() -> String {
+        if let path = Bundle.main.url(forResource: "Info", withExtension: "plist") {
+            let plist = NSDictionary(contentsOf: path)
+            return plist!["APIEndPoint"] as! String
+        } else {
+            return "api endpoint not set in Info.plist"
+        }
+    }
+    
+    private func getAudioRecordingData() -> Data {
         let data = try! Data(contentsOf: audioURL)
+        return data
+    }
+    
+    func createMultiformPOSTRequest() -> URLRequest {
+        let url = URL(string: apiEndPoint)
+        let recordingName = audioURL.lastPathComponent
+        let data = getAudioRecordingData()
         let boundary = "Boundary-\(UUID().uuidString)"
-        
         let body = createMultipart(data: data, boundary: boundary, fileName: recordingName)
-        print(body)
-        var request = URLRequest(url: url)
+        var request = URLRequest(url: url!)
         request.httpMethod = "POST"
         request.setValue("multipart/form-data; boundary=\(boundary)", forHTTPHeaderField: "Content-Type")
         request.setValue("100-continue", forHTTPHeaderField: "Expect")
         request.httpBody = body
-        
         return request
     }
     
