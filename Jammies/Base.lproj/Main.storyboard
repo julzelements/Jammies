@@ -23,7 +23,7 @@
                                 <rect key="frame" x="136.5" y="328.5" width="101" height="30"/>
                                 <state key="normal" title="Press to Listen"/>
                                 <connections>
-                                    <action selector="didStartListening:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R8p-C7-dZI"/>
+                                    <action selector="didStartRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vqg-rP-b52"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Listening..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="61J-ZX-BS7">
@@ -55,8 +55,8 @@
                     </view>
                     <connections>
                         <outlet property="activityIndicator" destination="xQh-JE-qKg" id="XbU-Qc-YHu"/>
-                        <outlet property="listenButton" destination="wbl-Vn-fId" id="LDw-CJ-Gv5"/>
                         <outlet property="progressBar" destination="gnr-mg-K5v" id="qVv-nz-sLh"/>
+                        <outlet property="recordButton" destination="wbl-Vn-fId" id="LSm-OP-UWX"/>
                         <outlet property="userFeedbackLabel" destination="61J-ZX-BS7" id="Qpo-B9-zuc"/>
                     </connections>
                 </viewController>

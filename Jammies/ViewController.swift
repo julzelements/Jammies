@@ -20,24 +20,24 @@ class ViewController: UIViewController, AVAudioRecorderDelegate {
     
     @IBOutlet weak var progressBar: UIProgressView!
     @IBOutlet weak var userFeedbackLabel: UILabel!
-    @IBOutlet weak var listenButton: UIButton!
+    @IBOutlet weak var recordButton: UIButton!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     enum DisplayState {
-        case notListening
-        case listening
+        case notRecording
+        case recording
         case networkRequest
         case networkFinished
     }
     
     func updateDisplay(displayState: DisplayState) {
         switch displayState {
-        case .notListening:
+        case .notRecording:
             activityIndicatorStopped()
             progressBar.isHidden = true
             userFeedbackLabel.isHidden = true
-        case .listening:
-            listenButton.isHidden = true
+        case .recording:
+            recordButton.isHidden = true
             progressBar.isHidden = false
             userFeedbackLabel.isHidden = false
             userFeedbackLabel.text = "Recording \(Int(microphoneRecordingTime)) secs of audio..."
@@ -55,7 +55,7 @@ class ViewController: UIViewController, AVAudioRecorderDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        updateDisplay(displayState: .notListening)
+        updateDisplay(displayState: .notRecording)
     }
     
     func startProgressBar() {
@@ -64,14 +64,16 @@ class ViewController: UIViewController, AVAudioRecorderDelegate {
         RunLoop.current.add(timer, forMode: .defaultRunLoopMode)
     }
 
-    @IBAction func didStartListening(_ sender: Any) {
+    @IBAction func didStartRecording(_ sender: Any) {
         startProgressBar()
-        updateDisplay(displayState: .listening)
+        updateDisplay(displayState: .recording)
+        recordAudio()
     }
     
     @objc func updateProgressBar() {
         if progressBar.progress >= 1.0 {
             timer.invalidate()
+            stopRecording()
             updateDisplay(displayState: .networkRequest)
         } else {
             let newProgress = progressBar.progress + getProgressBarIncrement()
@@ -97,6 +99,7 @@ class ViewController: UIViewController, AVAudioRecorderDelegate {
     func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {
         if(flag) {
             recordedAudio = RecordedAudio(audioFilePathURL: recorder.url as NSURL, audioTitle: recorder.url.lastPathComponent)
+            print(recorder.url)
         } else {
             print("recording was not successful")
         }
