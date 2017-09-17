@@ -1,6 +1,6 @@
 import UIKit
 
-class Recognize: NSObject {
+class AudioFormCreator: NSObject {
     
     var audioURL: URL
     var apiEndPoint: String
@@ -8,7 +8,7 @@ class Recognize: NSObject {
 
     init(audioFilePath: URL) {
         self.audioURL = audioFilePath
-        self.apiEndPoint = Recognize.getApiEndPoint()
+        self.apiEndPoint = AudioFormCreator.getApiEndPoint()
     }
     
     private static func getApiEndPoint() -> String {
@@ -20,7 +20,7 @@ class Recognize: NSObject {
         }
     }
     
-    private func getAudioRecordingData() -> Data {
+    private func getRecordedAudio() -> Data {
         let data = try! Data(contentsOf: audioURL)
         return data
     }
@@ -28,7 +28,7 @@ class Recognize: NSObject {
     func createMultiformPOSTRequest() -> URLRequest {
         let url = URL(string: apiEndPoint)
         let recordingName = audioURL.lastPathComponent
-        let data = getAudioRecordingData()
+        let data = getRecordedAudio()
         let boundary = "Boundary-\(UUID().uuidString)"
         let body = createMultipart(data: data, boundary: boundary, fileName: recordingName)
         var request = URLRequest(url: url!)

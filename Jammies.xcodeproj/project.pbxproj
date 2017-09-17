@@ -14,10 +14,11 @@
 		EC4D11071F674BA600C5ECDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4D11051F674BA600C5ECDB /* LaunchScreen.storyboard */; };
 		EC5765C61F678D84009A5A2B /* RecordedAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5765C51F678D84009A5A2B /* RecordedAudio.swift */; };
 		EC5765C81F679518009A5A2B /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5765C71F679518009A5A2B /* AudioRecorder.swift */; };
-		EC5765CB1F679B57009A5A2B /* Recognize.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5765CA1F679B57009A5A2B /* Recognize.swift */; };
+		EC5765CB1F679B57009A5A2B /* AudioFormCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5765CA1F679B57009A5A2B /* AudioFormCreator.swift */; };
 		EC5765CE1F679DBD009A5A2B /* IronMan_420-425secs.wav in Resources */ = {isa = PBXBuildFile; fileRef = EC5765CD1F679DBD009A5A2B /* IronMan_420-425secs.wav */; };
 		EC5765D01F679DE8009A5A2B /* APITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5765CF1F679DE8009A5A2B /* APITest.swift */; };
-		EC5765D11F679F20009A5A2B /* Recognize.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5765CA1F679B57009A5A2B /* Recognize.swift */; };
+		EC5765D11F679F20009A5A2B /* AudioFormCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5765CA1F679B57009A5A2B /* AudioFormCreator.swift */; };
+		EC804B0F1F6BA14300EFB0E0 /* TextFile.txt in Resources */ = {isa = PBXBuildFile; fileRef = EC804B0E1F6BA14300EFB0E0 /* TextFile.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,9 +43,10 @@
 		EC4D11131F674BA600C5ECDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC5765C51F678D84009A5A2B /* RecordedAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordedAudio.swift; sourceTree = "<group>"; };
 		EC5765C71F679518009A5A2B /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
-		EC5765CA1F679B57009A5A2B /* Recognize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recognize.swift; sourceTree = "<group>"; };
+		EC5765CA1F679B57009A5A2B /* AudioFormCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioFormCreator.swift; sourceTree = "<group>"; };
 		EC5765CD1F679DBD009A5A2B /* IronMan_420-425secs.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "IronMan_420-425secs.wav"; sourceTree = "<group>"; };
 		EC5765CF1F679DE8009A5A2B /* APITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITest.swift; sourceTree = "<group>"; };
+		EC804B0E1F6BA14300EFB0E0 /* TextFile.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = TextFile.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +114,7 @@
 		EC5765C91F679B0A009A5A2B /* Recognize */ = {
 			isa = PBXGroup;
 			children = (
-				EC5765CA1F679B57009A5A2B /* Recognize.swift */,
+				EC5765CA1F679B57009A5A2B /* AudioFormCreator.swift */,
 			);
 			path = Recognize;
 			sourceTree = "<group>";
@@ -121,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				EC5765CD1F679DBD009A5A2B /* IronMan_420-425secs.wav */,
+				EC804B0E1F6BA14300EFB0E0 /* TextFile.txt */,
 			);
 			path = Media;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC804B0F1F6BA14300EFB0E0 /* TextFile.txt in Resources */,
 				EC4D11071F674BA600C5ECDB /* LaunchScreen.storyboard in Resources */,
 				EC4D11041F674BA600C5ECDB /* Assets.xcassets in Resources */,
 				EC5765CE1F679DBD009A5A2B /* IronMan_420-425secs.wav in Resources */,
@@ -231,7 +235,7 @@
 				EC4D10FF1F674BA600C5ECDB /* ViewController.swift in Sources */,
 				EC5765C81F679518009A5A2B /* AudioRecorder.swift in Sources */,
 				EC4D10FD1F674BA600C5ECDB /* AppDelegate.swift in Sources */,
-				EC5765CB1F679B57009A5A2B /* Recognize.swift in Sources */,
+				EC5765CB1F679B57009A5A2B /* AudioFormCreator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,7 +243,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC5765D11F679F20009A5A2B /* Recognize.swift in Sources */,
+				EC5765D11F679F20009A5A2B /* AudioFormCreator.swift in Sources */,
 				EC5765D01F679DE8009A5A2B /* APITest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

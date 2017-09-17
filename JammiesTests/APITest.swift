@@ -4,14 +4,16 @@ import XCTest
 
 class APITest: XCTestCase {
     
+    var url: URL!
+    
     override func setUp() {
         super.setUp()
-
+        url = Bundle.main.url(forResource: "IronMan_420-425secs", withExtension: "wav")
     }
     
     func testDownloadWebData() {
         let fileUrl = Bundle.main.url(forResource: "IronMan_420-425secs", withExtension: "wav")
-        let recognize = Recognize(audioFilePath: fileUrl!)
+        let recognize = AudioFormCreator(audioFilePath: fileUrl!)
         let request = recognize.createMultiformPOSTRequest()
         
 
@@ -29,6 +31,13 @@ class APITest: XCTestCase {
         dataTask.resume()
         wait(for: [expectation], timeout: 20.0)
     }
-
+    
+    func testAudioFormShouldHaveAHashValueEqualToExpected() {
+        let audioForm = AudioFormCreator(audioFilePath: url!)
+        let multipartRequest = audioForm.createMultiformPOSTRequest()
+        let expectedHashValue: Int = 5888584665680383277
+        let hashValue = multipartRequest.hashValue
+        XCTAssertEqual(hashValue, expectedHashValue)
+    }
     
 }
