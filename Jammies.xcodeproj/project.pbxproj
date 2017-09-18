@@ -7,6 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC3402E01F6F879E0079E2C8 /* RecordedAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5765C51F678D84009A5A2B /* RecordedAudio.swift */; };
+		EC3402EA1F6F87D00079E2C8 /* SubtitleIOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3402E11F6F87CF0079E2C8 /* SubtitleIOTests.swift */; };
+		EC3402EB1F6F87D00079E2C8 /* SubtitleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3402E21F6F87CF0079E2C8 /* SubtitleTests.swift */; };
+		EC3402EC1F6F87D00079E2C8 /* SubtitleEventsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3402E31F6F87CF0079E2C8 /* SubtitleEventsTests.swift */; };
+		EC3402EE1F6F87D00079E2C8 /* StanzaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3402E51F6F87D00079E2C8 /* StanzaTests.swift */; };
+		EC3402F01F6F87D00079E2C8 /* TimeDouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3402E71F6F87D00079E2C8 /* TimeDouble.swift */; };
+		EC3402F11F6F87D00079E2C8 /* SRTTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3402E81F6F87D00079E2C8 /* SRTTimeTests.swift */; };
+		EC3402F21F6F87D00079E2C8 /* PlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3402E91F6F87D00079E2C8 /* PlayerTests.swift */; };
+		EC3403011F6F88490079E2C8 /* SRTTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3402F51F6F88480079E2C8 /* SRTTime.swift */; };
+		EC3403041F6F88490079E2C8 /* MyTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3402F81F6F88480079E2C8 /* MyTime.swift */; };
+		EC3403051F6F88490079E2C8 /* Stanza.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3402F91F6F88480079E2C8 /* Stanza.swift */; };
+		EC3403061F6F88490079E2C8 /* SubtitleEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3402FA1F6F88480079E2C8 /* SubtitleEvents.swift */; };
+		EC3403071F6F88490079E2C8 /* SubtitleIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3402FB1F6F88480079E2C8 /* SubtitleIO.swift */; };
+		EC3403091F6F88490079E2C8 /* ITime.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3402FD1F6F88490079E2C8 /* ITime.swift */; };
+		EC34030A1F6F88490079E2C8 /* SubtitleEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3402FE1F6F88490079E2C8 /* SubtitleEvent.swift */; };
+		EC34030B1F6F88490079E2C8 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3402FF1F6F88490079E2C8 /* Player.swift */; };
+		EC34030E1F6F88C60079E2C8 /* ITime.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3402FD1F6F88490079E2C8 /* ITime.swift */; };
+		EC34030F1F6F88C60079E2C8 /* MyTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3402F81F6F88480079E2C8 /* MyTime.swift */; };
+		EC3403101F6F88C60079E2C8 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3402FF1F6F88490079E2C8 /* Player.swift */; };
+		EC3403111F6F88C60079E2C8 /* SRTTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3402F51F6F88480079E2C8 /* SRTTime.swift */; };
+		EC3403121F6F88C60079E2C8 /* Stanza.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3402F91F6F88480079E2C8 /* Stanza.swift */; };
+		EC3403131F6F88C60079E2C8 /* SubtitleEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3402FE1F6F88490079E2C8 /* SubtitleEvent.swift */; };
+		EC3403141F6F88C60079E2C8 /* SubtitleEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3402FA1F6F88480079E2C8 /* SubtitleEvents.swift */; };
+		EC3403151F6F88C60079E2C8 /* SubtitleIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3402FB1F6F88480079E2C8 /* SubtitleIO.swift */; };
+		EC34031B1F6F8A0F0079E2C8 /* test.srt in Resources */ = {isa = PBXBuildFile; fileRef = EC3403191F6F89DD0079E2C8 /* test.srt */; };
+		EC34031C1F6F8A0F0079E2C8 /* IronMan.srt in Resources */ = {isa = PBXBuildFile; fileRef = EC3402F71F6F88480079E2C8 /* IronMan.srt */; };
+		EC34031D1F6F8A0F0079E2C8 /* spiderman.srt in Resources */ = {isa = PBXBuildFile; fileRef = EC3402F41F6F88480079E2C8 /* spiderman.srt */; };
+		EC34031E1F6F8A100079E2C8 /* test.srt in Resources */ = {isa = PBXBuildFile; fileRef = EC3403191F6F89DD0079E2C8 /* test.srt */; };
+		EC34031F1F6F8A100079E2C8 /* IronMan.srt in Resources */ = {isa = PBXBuildFile; fileRef = EC3402F71F6F88480079E2C8 /* IronMan.srt */; };
+		EC3403201F6F8A100079E2C8 /* spiderman.srt in Resources */ = {isa = PBXBuildFile; fileRef = EC3402F41F6F88480079E2C8 /* spiderman.srt */; };
+		EC3403241F6F8A800079E2C8 /* spiderman.mov in Resources */ = {isa = PBXBuildFile; fileRef = EC3403211F6F8A7B0079E2C8 /* spiderman.mov */; };
+		EC3403251F6F8A800079E2C8 /* spiderman.mov in Resources */ = {isa = PBXBuildFile; fileRef = EC3403211F6F8A7B0079E2C8 /* spiderman.mov */; };
+		EC3403261F6F8BA30079E2C8 /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5765C71F679518009A5A2B /* AudioRecorder.swift */; };
 		EC4D10FD1F674BA600C5ECDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4D10FC1F674BA600C5ECDB /* AppDelegate.swift */; };
 		EC4D10FF1F674BA600C5ECDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4D10FE1F674BA600C5ECDB /* ViewController.swift */; };
 		EC4D11021F674BA600C5ECDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4D11001F674BA600C5ECDB /* Main.storyboard */; };
@@ -32,6 +65,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EC3402E11F6F87CF0079E2C8 /* SubtitleIOTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubtitleIOTests.swift; sourceTree = "<group>"; };
+		EC3402E21F6F87CF0079E2C8 /* SubtitleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubtitleTests.swift; sourceTree = "<group>"; };
+		EC3402E31F6F87CF0079E2C8 /* SubtitleEventsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubtitleEventsTests.swift; sourceTree = "<group>"; };
+		EC3402E51F6F87D00079E2C8 /* StanzaTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StanzaTests.swift; sourceTree = "<group>"; };
+		EC3402E71F6F87D00079E2C8 /* TimeDouble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeDouble.swift; sourceTree = "<group>"; };
+		EC3402E81F6F87D00079E2C8 /* SRTTimeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRTTimeTests.swift; sourceTree = "<group>"; };
+		EC3402E91F6F87D00079E2C8 /* PlayerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerTests.swift; sourceTree = "<group>"; };
+		EC3402F41F6F88480079E2C8 /* spiderman.srt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = spiderman.srt; sourceTree = "<group>"; };
+		EC3402F51F6F88480079E2C8 /* SRTTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRTTime.swift; sourceTree = "<group>"; };
+		EC3402F71F6F88480079E2C8 /* IronMan.srt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = IronMan.srt; sourceTree = "<group>"; };
+		EC3402F81F6F88480079E2C8 /* MyTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTime.swift; sourceTree = "<group>"; };
+		EC3402F91F6F88480079E2C8 /* Stanza.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stanza.swift; sourceTree = "<group>"; };
+		EC3402FA1F6F88480079E2C8 /* SubtitleEvents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubtitleEvents.swift; sourceTree = "<group>"; };
+		EC3402FB1F6F88480079E2C8 /* SubtitleIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubtitleIO.swift; sourceTree = "<group>"; };
+		EC3402FD1F6F88490079E2C8 /* ITime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITime.swift; sourceTree = "<group>"; };
+		EC3402FE1F6F88490079E2C8 /* SubtitleEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubtitleEvent.swift; sourceTree = "<group>"; };
+		EC3402FF1F6F88490079E2C8 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		EC3403191F6F89DD0079E2C8 /* test.srt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.srt; sourceTree = "<group>"; };
+		EC3403211F6F8A7B0079E2C8 /* spiderman.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = spiderman.mov; sourceTree = "<group>"; };
+		EC3403271F6F8BBC0079E2C8 /* TextFile.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = TextFile.txt; path = Media/TextFile.txt; sourceTree = SOURCE_ROOT; };
 		EC4D10F91F674BA600C5ECDB /* Jammies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jammies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC4D10FC1F674BA600C5ECDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC4D10FE1F674BA600C5ECDB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,11 +120,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC3402F31F6F87FE0079E2C8 /* Subtitle */ = {
+			isa = PBXGroup;
+			children = (
+				EC3402FF1F6F88490079E2C8 /* Player.swift */,
+				EC3402F51F6F88480079E2C8 /* SRTTime.swift */,
+				EC3402F91F6F88480079E2C8 /* Stanza.swift */,
+				EC3402FE1F6F88490079E2C8 /* SubtitleEvent.swift */,
+				EC3402FA1F6F88480079E2C8 /* SubtitleEvents.swift */,
+				EC3402FB1F6F88480079E2C8 /* SubtitleIO.swift */,
+			);
+			path = Subtitle;
+			sourceTree = "<group>";
+		};
+		EC34030C1F6F88690079E2C8 /* TestAssets */ = {
+			isa = PBXGroup;
+			children = (
+				EC3403271F6F8BBC0079E2C8 /* TextFile.txt */,
+				EC5765CD1F679DBD009A5A2B /* IronMan_420-425secs.wav */,
+				EC3403211F6F8A7B0079E2C8 /* spiderman.mov */,
+				EC3403191F6F89DD0079E2C8 /* test.srt */,
+				EC3402F71F6F88480079E2C8 /* IronMan.srt */,
+				EC3402F41F6F88480079E2C8 /* spiderman.srt */,
+			);
+			path = TestAssets;
+			sourceTree = "<group>";
+		};
+		EC34030D1F6F88960079E2C8 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				EC5765CA1F679B57009A5A2B /* AudioFormCreator.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		EC3403281F6F8BD70079E2C8 /* Time */ = {
+			isa = PBXGroup;
+			children = (
+				EC3402FD1F6F88490079E2C8 /* ITime.swift */,
+				EC3402F81F6F88480079E2C8 /* MyTime.swift */,
+			);
+			path = Time;
+			sourceTree = "<group>";
+		};
 		EC4D10F01F674BA600C5ECDB = {
 			isa = PBXGroup;
 			children = (
+				EC3403281F6F8BD70079E2C8 /* Time */,
 				EC5765CC1F679BF3009A5A2B /* Media */,
-				EC5765C91F679B0A009A5A2B /* Recognize */,
+				EC5765C91F679B0A009A5A2B /* AudioRecording */,
+				EC34030D1F6F88960079E2C8 /* API */,
+				EC34030C1F6F88690079E2C8 /* TestAssets */,
+				EC3402F31F6F87FE0079E2C8 /* Subtitle */,
 				EC4D10FB1F674BA600C5ECDB /* Jammies */,
 				EC4D11101F674BA600C5ECDB /* JammiesTests */,
 				EC4D10FA1F674BA600C5ECDB /* Products */,
@@ -90,14 +190,12 @@
 		EC4D10FB1F674BA600C5ECDB /* Jammies */ = {
 			isa = PBXGroup;
 			children = (
-				EC5765C51F678D84009A5A2B /* RecordedAudio.swift */,
 				EC4D10FC1F674BA600C5ECDB /* AppDelegate.swift */,
 				EC4D10FE1F674BA600C5ECDB /* ViewController.swift */,
 				EC4D11001F674BA600C5ECDB /* Main.storyboard */,
 				EC4D11031F674BA600C5ECDB /* Assets.xcassets */,
 				EC4D11051F674BA600C5ECDB /* LaunchScreen.storyboard */,
 				EC4D11081F674BA600C5ECDB /* Info.plist */,
-				EC5765C71F679518009A5A2B /* AudioRecorder.swift */,
 			);
 			path = Jammies;
 			sourceTree = "<group>";
@@ -105,24 +203,31 @@
 		EC4D11101F674BA600C5ECDB /* JammiesTests */ = {
 			isa = PBXGroup;
 			children = (
+				EC3402E91F6F87D00079E2C8 /* PlayerTests.swift */,
+				EC3402E81F6F87D00079E2C8 /* SRTTimeTests.swift */,
+				EC3402E51F6F87D00079E2C8 /* StanzaTests.swift */,
+				EC3402E31F6F87CF0079E2C8 /* SubtitleEventsTests.swift */,
+				EC3402E11F6F87CF0079E2C8 /* SubtitleIOTests.swift */,
+				EC3402E21F6F87CF0079E2C8 /* SubtitleTests.swift */,
+				EC3402E71F6F87D00079E2C8 /* TimeDouble.swift */,
 				EC4D11131F674BA600C5ECDB /* Info.plist */,
 				EC5765CF1F679DE8009A5A2B /* APITest.swift */,
 			);
 			path = JammiesTests;
 			sourceTree = "<group>";
 		};
-		EC5765C91F679B0A009A5A2B /* Recognize */ = {
+		EC5765C91F679B0A009A5A2B /* AudioRecording */ = {
 			isa = PBXGroup;
 			children = (
-				EC5765CA1F679B57009A5A2B /* AudioFormCreator.swift */,
+				EC5765C71F679518009A5A2B /* AudioRecorder.swift */,
+				EC5765C51F678D84009A5A2B /* RecordedAudio.swift */,
 			);
-			path = Recognize;
+			path = AudioRecording;
 			sourceTree = "<group>";
 		};
 		EC5765CC1F679BF3009A5A2B /* Media */ = {
 			isa = PBXGroup;
 			children = (
-				EC5765CD1F679DBD009A5A2B /* IronMan_420-425secs.wav */,
 				EC804B0E1F6BA14300EFB0E0 /* TextFile.txt */,
 			);
 			path = Media;
@@ -210,10 +315,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC804B0F1F6BA14300EFB0E0 /* TextFile.txt in Resources */,
+				EC34031C1F6F8A0F0079E2C8 /* IronMan.srt in Resources */,
+				EC3403241F6F8A800079E2C8 /* spiderman.mov in Resources */,
 				EC4D11071F674BA600C5ECDB /* LaunchScreen.storyboard in Resources */,
 				EC4D11041F674BA600C5ECDB /* Assets.xcassets in Resources */,
 				EC5765CE1F679DBD009A5A2B /* IronMan_420-425secs.wav in Resources */,
 				EC4D11021F674BA600C5ECDB /* Main.storyboard in Resources */,
+				EC34031B1F6F8A0F0079E2C8 /* test.srt in Resources */,
+				EC34031D1F6F8A0F0079E2C8 /* spiderman.srt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +330,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC3403251F6F8A800079E2C8 /* spiderman.mov in Resources */,
+				EC34031F1F6F8A100079E2C8 /* IronMan.srt in Resources */,
+				EC34031E1F6F8A100079E2C8 /* test.srt in Resources */,
+				EC3403201F6F8A100079E2C8 /* spiderman.srt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,11 +344,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC3403141F6F88C60079E2C8 /* SubtitleEvents.swift in Sources */,
+				EC3403151F6F88C60079E2C8 /* SubtitleIO.swift in Sources */,
+				EC3403121F6F88C60079E2C8 /* Stanza.swift in Sources */,
 				EC5765C61F678D84009A5A2B /* RecordedAudio.swift in Sources */,
 				EC4D10FF1F674BA600C5ECDB /* ViewController.swift in Sources */,
+				EC3403131F6F88C60079E2C8 /* SubtitleEvent.swift in Sources */,
+				EC34030F1F6F88C60079E2C8 /* MyTime.swift in Sources */,
+				EC34030E1F6F88C60079E2C8 /* ITime.swift in Sources */,
+				EC3403101F6F88C60079E2C8 /* Player.swift in Sources */,
 				EC5765C81F679518009A5A2B /* AudioRecorder.swift in Sources */,
 				EC4D10FD1F674BA600C5ECDB /* AppDelegate.swift in Sources */,
 				EC5765CB1F679B57009A5A2B /* AudioFormCreator.swift in Sources */,
+				EC3403111F6F88C60079E2C8 /* SRTTime.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,8 +364,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC3403061F6F88490079E2C8 /* SubtitleEvents.swift in Sources */,
+				EC3403091F6F88490079E2C8 /* ITime.swift in Sources */,
+				EC3403051F6F88490079E2C8 /* Stanza.swift in Sources */,
+				EC3402EE1F6F87D00079E2C8 /* StanzaTests.swift in Sources */,
+				EC34030B1F6F88490079E2C8 /* Player.swift in Sources */,
+				EC3402EC1F6F87D00079E2C8 /* SubtitleEventsTests.swift in Sources */,
+				EC3403071F6F88490079E2C8 /* SubtitleIO.swift in Sources */,
+				EC3403041F6F88490079E2C8 /* MyTime.swift in Sources */,
+				EC3402EB1F6F87D00079E2C8 /* SubtitleTests.swift in Sources */,
+				EC3402F21F6F87D00079E2C8 /* PlayerTests.swift in Sources */,
+				EC3402E01F6F879E0079E2C8 /* RecordedAudio.swift in Sources */,
+				EC34030A1F6F88490079E2C8 /* SubtitleEvent.swift in Sources */,
+				EC3402F11F6F87D00079E2C8 /* SRTTimeTests.swift in Sources */,
 				EC5765D11F679F20009A5A2B /* AudioFormCreator.swift in Sources */,
+				EC3403261F6F8BA30079E2C8 /* AudioRecorder.swift in Sources */,
+				EC3403011F6F88490079E2C8 /* SRTTime.swift in Sources */,
 				EC5765D01F679DE8009A5A2B /* APITest.swift in Sources */,
+				EC3402EA1F6F87D00079E2C8 /* SubtitleIOTests.swift in Sources */,
+				EC3402F01F6F87D00079E2C8 /* TimeDouble.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
